@@ -1,0 +1,1 @@
+It took 322 seconds to run in serial
