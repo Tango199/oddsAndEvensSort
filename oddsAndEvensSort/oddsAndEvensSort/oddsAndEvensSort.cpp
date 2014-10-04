@@ -5,7 +5,6 @@
 using namespace std;
 void getRandom();
 void doSort();
-void swap();
 void doPrint();
 
 
@@ -18,7 +17,7 @@ int tmp;
 
 int main()
 {
-	for(threadCount=1;threadCount<=10;threadCount++);
+	for(threadCount=1;threadCount<=25;threadCount++)
 	{
 		clock_t start,end;
 		srand(time(0));
@@ -33,8 +32,11 @@ int main()
 		//doPrint();
 		end = clock();
 		clockDiff = (float)((end - start)/CLOCKS_PER_SEC);
-		cout << "Array is Sorted, it took " << clockDiff <<" seconds" << endl;
-		myfile << "It took " << clockDiff << " seconds to run with two parallel for directives on " << threadCount << " threads" << endl;
+		cout << "Array is Sorted, it took " << clockDiff <<" seconds" <<" with " <<threadCount << " number of threads" << endl;
+		//myfile << "It took " << clockDiff << " seconds to run with two parallel for directives on " << threadCount << " threads" << endl;
+		//myfile << "It took " << clockDiff << " seconds to run the program win serial" << endl;
+		myfile << "It took " << clockDiff << " seconds to run with two for directives on " << threadCount << " threads" << endl;
+		
 	}
 	system("pause");
 	return 0;
@@ -60,7 +62,7 @@ void doSort()
 {
 	for(phase =0; phase < n; phase++)
 	{
-	
+
 		if(phase % 2 == 0)
 		{
 #pragma omp parallel for num_threads(threadCount)\
