@@ -10,7 +10,7 @@ void doPrint();
 
 const int n = 100000;
 int a[n] = {};
-int phase;
+int phase=0;
 int i;
 int threadCount;
 int tmp;
@@ -60,13 +60,15 @@ void getRandom()
 }
 void doSort()
 {
+	#pragma omp parallel num_threads(threadCount) \
+	default(none) shared(a,n) private(i,tmp,phase)
+
 	for(phase =0; phase < n; phase++)
 	{
 
 		if(phase % 2 == 0)
 		{
-#pragma omp parallel for num_threads(threadCount)\
-	default(none) shared(a,n) private(i,tmp)
+			#pragma omp for
 			for(i=1;i<n;i+=2)
 			{
 				if(a[i-1] > a[i])
@@ -80,8 +82,7 @@ void doSort()
 		}
 		else
 		{
-			#pragma omp parallel for num_threads(threadCount)\
-	default(none) shared(a,n) private(i,tmp)
+			#pragma omp for
 			for(i=1; i<n-1;i+=2)
 			{
 				if(a[i] > a[i+1])

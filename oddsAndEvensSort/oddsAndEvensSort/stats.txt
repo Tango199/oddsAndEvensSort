@@ -34,3 +34,29 @@ It took 7 seconds to run with two parallel for directives on 22 threads
 It took 8 seconds to run with two parallel for directives on 23 threads
 It took 9 seconds to run with two parallel for directives on 24 threads
 It took 30 seconds to run with two parallel for directives on 25 threads
+
+It took 28 seconds to run with two for directives on 1 threads
+It took 14 seconds to run with two for directives on 2 threads
+It took 11 seconds to run with two for directives on 3 threads
+It took 9 seconds to run with two for directives on 4 threads
+It took 9 seconds to run with two for directives on 5 threads
+It took 8 seconds to run with two for directives on 6 threads
+It took 7 seconds to run with two for directives on 7 threads
+It took 7 seconds to run with two for directives on 8 threads
+It took 13 seconds to run with two for directives on 9 threads
+It took 24 seconds to run with two for directives on 10 threads
+It took 9 seconds to run with two for directives on 11 threads
+It took 9 seconds to run with two for directives on 12 threads
+It took 8 seconds to run with two for directives on 13 threads
+It took 25 seconds to run with two for directives on 14 threads
+It took 10 seconds to run with two for directives on 15 threads
+It took 9 seconds to run with two for directives on 16 threads
+It took 8 seconds to run with two for directives on 17 threads
+It took 12 seconds to run with two for directives on 18 threads
+It took 22 seconds to run with two for directives on 19 threads
+It took 8 seconds to run with two for directives on 20 threads
+It took 8 seconds to run with two for directives on 21 threads
+It took 8 seconds to run with two for directives on 22 threads
+It took 15 seconds to run with two for directives on 23 threads
+It took 19 seconds to run with two for directives on 24 threads
+It took 7 seconds to run with two for directives on 25 threads
