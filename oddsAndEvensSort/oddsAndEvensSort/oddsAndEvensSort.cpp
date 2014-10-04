@@ -78,6 +78,8 @@ void doSort()
 		}
 		else
 		{
+			#pragma omp parallel for num_threads(threadCount)\
+	default(none) shared(a,n) private(i,tmp)
 			for(i=1; i<n-1;i+=2)
 			{
 				if(a[i] > a[i+1])
