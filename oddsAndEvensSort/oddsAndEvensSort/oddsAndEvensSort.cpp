@@ -1,3 +1,7 @@
+//Ryan Schlernitzauer
+//This program sorts an array of numbers using an odds and evens sort 
+
+
 #include <iostream>
 #include <time.h>
 #include <fstream>
